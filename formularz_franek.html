@@ -7,7 +7,7 @@
 <body bgcolor="#87CEFA">
     <center><h1>Formularz Rekrutacji do Zespołu Muzycznego</h1></center>
     <form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="post">
-        <table>
+        <table align="center" cellpadding="10">
             <!-- Personal Information -->
             <tr>
                 <td colspan="3">
@@ -30,7 +30,7 @@
                     <br><br>
                     Ile masz lat doświadczenia? 
                     <input type="radio" name="lat_doswiadczenia" value="mniej_niz_rok"> Mniej niż 1 rok 
-                    <input type="radio" name="lat_doswiadczenia" value="0-1_3_lata"> 0-1-3 lata 
+                    <input type="radio" name="lat_doswiadczenia" value="0-1_3_lata"> 1-3 lata 
                     <input type="radio" name="lat_doswiadczenia" value="wiecej_niz_3_lata"> Więcej niż 3 lata
                 </td>
             </tr>
@@ -46,56 +46,52 @@
                     <input type="checkbox" name="inne"> Inne
                 </td>
             </tr>
-            
-            <p align="left"> 
-                <tr>
-                    <td>
-                        <b>4. Preferencje muzyczne:</b><br>
-                        <input type="checkbox" name="rock"> Rock<br>
-                        <input type="checkbox" name="jazz"> Jazz<br>
-                        <input type="checkbox" name="pop"> Pop<br>
-                        <input type="checkbox" name="hiphop"> Hip Hop<br>
-                        <input type="checkbox" name="inne"> Inne
-                    </td>
-            </p>
+
+            <!-- Musical Preferences -->
+            <tr>
+                <td>
+                    <b>4. Preferencje muzyczne:</b><br>
+                    <input type="checkbox" name="rock"> Rock<br>
+                    <input type="checkbox" name="jazz"> Jazz<br>
+                    <input type="checkbox" name="pop"> Pop<br>
+                    <input type="checkbox" name="hiphop"> Hip Hop<br>
+                    <input type="checkbox" name="inne"> Inne
+                </td>
                 
                 <!-- Interests -->
-            <p align="left"> 
-                    <td>
-                        <b>5. Zainteresowania:</b><br>
-                        <input type="checkbox" name="granie_na_zywo"> Granie na żywo<br>
-                        <input type="checkbox" name="komponowanie"> Komponowanie<br>
-                        <input type="checkbox" name="producent"> Producent<br>
-                        <input type="checkbox" name="granie_w_studio"> Granie w studio
-                    </td>
-                </tr>
-            </p>
+                <td>
+                    <b>5. Zainteresowania:</b><br>
+                    <input type="checkbox" name="granie_na_zywo"> Granie na żywo<br>
+                    <input type="checkbox" name="komponowanie"> Komponowanie<br>
+                    <input type="checkbox" name="producent"> Producent<br>
+                    <input type="checkbox" name="granie_w_studio"> Granie w studio
+                </td>
+            </tr>
             
             <!-- Location -->
-            <p align="left"> 
-                <tr>
-                    <td colspan="3">
-                        <b>6. Lokalizacja:</b><br>
-                        Miasto: <input name="miasto" size="25"><br><br>
-                        Województwo: <input name="wojewodztwo" size="25"><br><br>
-                        Kraj: <input name="kraj" size="25">
-                    </td>
-                </tr>
-            </p>
+            <tr>
+                <td colspan="3">
+                    <b>6. Lokalizacja:</b><br>
+                    Miasto: <input name="miasto" size="25"><br><br>
+                    Województwo: <input name="wojewodztwo" size="25"><br><br>
+                    Kraj: <input name="kraj" size="25">
+                </td>
+            </tr>
             
             <!-- About You -->
-            <center>
-                <tr>
-                    <td colspan="3">
-                        <b>7. Napisz coś o sobie:</b><br>
-                        <textarea name="opis" cols="60" rows="5"></textarea>
-                    </td>
-                </tr>
-            </center>
+            <tr>
+                <td colspan="3">
+                    <b>7. Napisz coś o sobie:</b><br>
+                    <textarea name="opis" cols="60" rows="5"></textarea>
+                </td>
+            </tr>
+            
             <!-- Submit and Reset Buttons -->
             <tr>
-                <td><input type="reset" value="WYCZYŚĆ" style="height:50px; width:150px"></td>
-                <td><input type="submit" value="WYŚLIJ" style="height:50px; width:150px"></td>
+                <td align="center" colspan="3">
+                    <input type="reset" value="WYCZYŚĆ" style="height:50px; width:150px">
+                    <input type="submit" value="WYŚLIJ" style="height:50px; width:150px">
+                </td>
             </tr>
         </table>
     </form>
