@@ -8,10 +8,9 @@
     <h1 align="center">Formularz Rekrutacji do Zespołu Muzycznego</h1>
     <form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="post">
         <table border="0" cellpadding="10" cellspacing="0" align="center" width="80%">
-            <!-- Personal Information -->
             <tr>
                 <td colspan="2">
-                    <b>1. Twoje dane osobowe</b><br>
+                    <b>1. Twoje dane osobowe</b><br><br>
                     Imię: <input name="imie" size="25"><br><br>
                     Nazwisko: <input name="nazwisko" size="25"><br><br>
                     E-mail: <input name="email" size="25"><br><br>
@@ -20,10 +19,9 @@
                 </td>
             </tr>
             
-            <!-- Musical Experience -->
             <tr>
                 <td colspan="2">
-                    <b>2. Doświadczenie muzyczne:</b><br>
+                    <b>2. Doświadczenie muzyczne:</b><br><br>
                     Czy grałeś/aś w zespole? 
                     <input type="radio" name="grales_w_zespole" value="tak"> Tak 
                     <input type="radio" name="grales_w_zespole" value="nie"> Nie
@@ -35,10 +33,9 @@
                 </td>
             </tr>
             
-            <!-- Musical Skills -->
             <tr>
-               <td colspan="2">
-                    <b>3. Umiejętności muzyczne:</b><br>
+                <td valign="top">
+                    <b>3. Umiejętności muzyczne:</b><br><br>
                     <input type="checkbox" name="perkusja"> Perkusja<br>
                     <input type="checkbox" name="gitara"> Gitara<br>
                     <input type="checkbox" name="bass"> Bass<br>
@@ -46,9 +43,8 @@
                     <input type="checkbox" name="inne"> Inne
                 </td>
 
-                <!-- Musical Preferences -->
-                <td colspan="2" align="right">
-                    <b>4. Preferencje muzyczne:</b><br>
+                <td valign="top">
+                    <b>4. Preferencje muzyczne:</b><br><br>
                     <input type="checkbox" name="rock"> Rock<br>
                     <input type="checkbox" name="jazz"> Jazz<br>
                     <input type="checkbox" name="pop"> Pop<br>
@@ -57,10 +53,9 @@
                 </td>
             </tr>
 
-            <!-- Interests -->
             <tr>
-                <td colspan="2" align="right">
-                    <b>5. Zainteresowania:</b><br>
+                <td colspan="2">
+                    <b>5. Zainteresowania:</b><br><br>
                     <input type="checkbox" name="granie_na_zywo"> Granie na żywo<br>
                     <input type="checkbox" name="komponowanie"> Komponowanie<br>
                     <input type="checkbox" name="producent"> Producent<br>
@@ -68,28 +63,27 @@
                 </td>
             </tr>
 
-            <!-- Location -->
             <tr>
-                <td colspan="2" align="right">
-                    <b>6. Lokalizacja:</b><br>
+                <td colspan="2">
+                    <b>6. Lokalizacja:</b><br><br>
                     Miasto: <input name="miasto" size="25"><br><br>
                     Województwo: <input name="wojewodztwo" size="25"><br><br>
                     Kraj: <input name="kraj" size="25">
                 </td>
             </tr>
             
-            <!-- About You -->
             <tr>
                 <td colspan="2" align="center">
-                    <b>7. Napisz coś o sobie:</b><br>
+                    <b>7. Napisz coś o sobie:</b><br><br>
                     <textarea name="opis" cols="60" rows="5"></textarea>
                 </td>
             </tr>
             
-            <!-- Submit and Reset Buttons -->
             <tr>
-                <td colspan="2" align="center">
+                <td align="center">
                     <input type="reset" value="WYCZYŚĆ" style="height:50px; width:150px">
+                </td>
+                <td align="center">
                     <input type="submit" value="WYŚLIJ" style="height:50px; width:150px">
                 </td>
             </tr>
@@ -97,4 +91,3 @@
     </form>
 </body>
 </html>
-
