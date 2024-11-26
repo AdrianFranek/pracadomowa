@@ -3,13 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>Formularz Rekrutacji do Zespołu Muzycznego</title>
+    <style>
+        /* Apply a small margin adjustment for equal alignment */
+        table {
+            margin: 0 auto;
+            text-align: left;
+        }
+        td {
+            vertical-align: top;
+            padding: 10px; /* Ensures consistent spacing */
+        }
+    </style>
 </head>
 <body bgcolor="#87CEFA">
     <h1 align="center">Formularz Rekrutacji do Zespołu Muzycznego</h1>
     <form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="post">
-        <table align="center">
+        <table>
             <tr>
-                <td valign="top" width="50%"> 
+                <td width="50%"> 
                     <b>1. Twoje dane osobowe</b><br><br>
                     Imię: <input name="imie" size="25"><br><br>
                     Nazwisko: <input name="nazwisko" size="25"><br><br>
@@ -18,7 +29,7 @@
                     Wiek: <input name="wiek" size="25">
                 </td>
                 
-                <td valign="top" width="50%"> 
+                <td width="50%"> 
                     <b>4. Preferencje muzyczne:</b><br><br>
                     <input type="checkbox" name="rock"> Rock<br>
                     <input type="checkbox" name="jazz"> Jazz<br>
@@ -29,7 +40,7 @@
             </tr>
             
             <tr>
-                <td valign="top" width="50%">
+                <td>
                     <b>2. Doświadczenie muzyczne:</b><br><br>
                     Czy grałeś/aś w zespole? 
                     <input type="radio" name="grales_w_zespole" value="tak"> Tak 
@@ -41,7 +52,7 @@
                     <input type="radio" name="lat_doswiadczenia" value="wiecej_niz_3_lata"> Więcej niż 3 lata
                 </td>
 
-                <td valign="top" width="50%">
+                <td>
                     <b>5. Zainteresowania:</b><br><br>
                     <input type="checkbox" name="granie_na_zywo"> Granie na żywo<br>
                     <input type="checkbox" name="komponowanie"> Komponowanie<br>
@@ -51,7 +62,7 @@
             </tr>
 
             <tr>
-                <td valign="top" width="50%">
+                <td>
                     <b>3. Umiejętności muzyczne:</b><br><br>
                     <input type="checkbox" name="perkusja"> Perkusja<br>
                     <input type="checkbox" name="gitara"> Gitara<br>
@@ -60,7 +71,7 @@
                     <input type="checkbox" name="inne"> Inne
                 </td>
 
-                <td valign="top" width="50%">
+                <td>
                     <b>6. Lokalizacja:</b><br><br>
                     Miasto: <input name="miasto" size="25"><br><br>
                     Województwo: <input name="wojewodztwo" size="25"><br><br>
