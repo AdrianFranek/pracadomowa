@@ -3,24 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>Formularz Rekrutacji do Zespołu Muzycznego</title>
-    <style>
-        /* Apply a small margin adjustment for equal alignment */
-        table {
-            margin: 0 auto;
-            text-align: left;
-        }
-        td {
-            vertical-align: top;
-            padding: 10px; /* Ensures consistent spacing */
-        }
-    </style>
 </head>
 <body bgcolor="#87CEFA">
     <h1 align="center">Formularz Rekrutacji do Zespołu Muzycznego</h1>
-    <form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="post">
-        <table>
+    <form enctype="text/plain" action="mailto:mkryniew@wp.pl" method="post">
+        <table align="center" cellpadding="10">
+            <!-- Row 1: Questions 1 & 4 -->
             <tr>
-                <td width="50%"> 
+                <td valign="top" align="center">
                     <b>1. Twoje dane osobowe</b><br><br>
                     Imię: <input name="imie" size="25"><br><br>
                     Nazwisko: <input name="nazwisko" size="25"><br><br>
@@ -28,8 +18,7 @@
                     Numer telefonu: <input name="telefon" size="25"><br><br>
                     Wiek: <input name="wiek" size="25">
                 </td>
-                
-                <td width="50%"> 
+                <td valign="top" align="center">
                     <b>4. Preferencje muzyczne:</b><br><br>
                     <input type="checkbox" name="rock"> Rock<br>
                     <input type="checkbox" name="jazz"> Jazz<br>
@@ -38,21 +27,20 @@
                     <input type="checkbox" name="inne_pref"> Inne
                 </td>
             </tr>
-            
+
+            <!-- Row 2: Questions 2 & 5 -->
             <tr>
-                <td>
+                <td valign="top" align="center">
                     <b>2. Doświadczenie muzyczne:</b><br><br>
                     Czy grałeś/aś w zespole? 
                     <input type="radio" name="grales_w_zespole" value="tak"> Tak 
-                    <input type="radio" name="grales_w_zespole" value="nie"> Nie
-                    <br><br>
+                    <input type="radio" name="grales_w_zespole" value="nie"> Nie<br><br>
                     Ile masz lat doświadczenia? <br>
                     <input type="radio" name="lat_doswiadczenia" value="mniej_niz_rok"> Mniej niż 1 rok<br>
                     <input type="radio" name="lat_doswiadczenia" value="1-3_lata"> 1-3 lata<br>
                     <input type="radio" name="lat_doswiadczenia" value="wiecej_niz_3_lata"> Więcej niż 3 lata
                 </td>
-
-                <td>
+                <td valign="top" align="center">
                     <b>5. Zainteresowania:</b><br><br>
                     <input type="checkbox" name="granie_na_zywo"> Granie na żywo<br>
                     <input type="checkbox" name="komponowanie"> Komponowanie<br>
@@ -61,8 +49,9 @@
                 </td>
             </tr>
 
+            <!-- Row 3: Questions 3 & 6 -->
             <tr>
-                <td>
+                <td valign="top" align="center">
                     <b>3. Umiejętności muzyczne:</b><br><br>
                     <input type="checkbox" name="perkusja"> Perkusja<br>
                     <input type="checkbox" name="gitara"> Gitara<br>
@@ -70,22 +59,23 @@
                     <input type="checkbox" name="wokal"> Wokal<br>
                     <input type="checkbox" name="inne"> Inne
                 </td>
-
-                <td>
+                <td valign="top" align="center">
                     <b>6. Lokalizacja:</b><br><br>
                     Miasto: <input name="miasto" size="25"><br><br>
                     Województwo: <input name="wojewodztwo" size="25"><br><br>
                     Kraj: <input name="kraj" size="25">
                 </td>
             </tr>
-            
+
+            <!-- Row 4: Question 7 -->
             <tr>
                 <td colspan="2" align="center">
                     <b>7. Napisz coś o sobie:</b><br><br>
                     <textarea name="opis" cols="60" rows="5"></textarea>
                 </td>
             </tr>
-            
+
+            <!-- Row 5: Buttons -->
             <tr>
                 <td align="center">
                     <input type="reset" value="WYCZYŚĆ" style="height:50px; width:150px">
